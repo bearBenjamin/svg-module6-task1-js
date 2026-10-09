@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="styles.css" rel="stylesheet">
+  <style> @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@700&family=Kanit:wght@700&family=Open+Sans:wght@500&family=Secular+One&display=swap'); </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Маски</title>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="preview">
+    <img src="./image/image-01.jpg" alt="Preview">
+    <span>Preview</span>
+    <svg class="svg-mask" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <mask id="my-mask" x="0" y="0" width="100%" height="100%">
+          <rect width="100%" height="100%" fill="white"></rect>
+          <circle class="hole-1" fill="black"></circle>
+          <circle class="hole-2" fill="black"></circle>
+          <circle class="hole-3" fill="black"></circle>
+        </mask>
+      </defs>
+      <rect width="100%" height="100%" fill="black" mask="url(#my-mask)"></rect>
+    </svg>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
